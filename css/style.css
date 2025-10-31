@@ -105,6 +105,7 @@ section {
   border: 0.1rem solid #ebbf46;
   background: #fff;
   color: #ebbf46;
+  outline: none;
   cursor: pointer;
   text-transform: capitalize;
 }
@@ -112,6 +113,7 @@ section {
 .btn:hover {
   background: #ebbf46;
   color: #fff;
+  outline: none;
 }
 
 .header {
@@ -1055,3 +1057,4 @@ section {
 }
 
 /*# sourceMappingURL=style.css.map */
+
