@@ -3,7 +3,39 @@
   a, button, img, input {
     -webkit-tap-highlight-color: transparent; /* For iOS Safari */
   }
+/* Removes outline for all interactive elements on focus */
+*:focus {
+  outline: none;
+}
 
+/* Or, for specific elements like input fields */
+input:focus {
+  outline: none;
+}
+
+/* Or, for links */
+a:focus {
+  outline: none;
+}
+
+/* Removes tap highlight for all elements */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Or, for specific elements */
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+/* Apply custom focus styles only when keyboard navigation is detected */
+*:focus:not(:focus-visible) {
+  outline: none; /* Remove outline for mouse users */
+}
+
+/* Define your custom focus styles for keyboard users */
+*:focus-visible {
+  outline: 2px solid blue; /* Example custom outline */
+}
   /* Remove focus outlines by default */
   :focus {
     outline: none;
@@ -1057,4 +1089,5 @@ section {
 }
 
 /*# sourceMappingURL=style.css.map */
+
 
